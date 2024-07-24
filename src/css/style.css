@@ -243,6 +243,7 @@ body {
     border: 2px solid #EEF0EA;
     padding: 8px;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 
 .costum-thumbnail:hover {
@@ -297,16 +298,42 @@ body {
     content: '-';
 }
 .custom-carousel-indicators2 {
-    bottom: -20% !important;
+    bottom: -2% !important;
   }
   
   .custom-carousel-indicators2 li {
     width: 13px !important;
     height: 13px !important;
-    margin: 2px;
+    margin: 2px !important;
     background-color: #dbdbdb !important;
   }
   
   .custom-carousel-indicators2 li.active {
     background-color: #565656 !important;
   }
+  .pannel{
+    border: 4px solid #EEF0EA;
+    border-radius: 2px;
+    padding: 20px;
+  }
+  .pannel h4,
+  .pannel .price{
+    font-size: 130%;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+  .costum-text-muted{
+    color: #A9A9A9;
+  }
+  .arrow-btn{
+    background-color: #fff;
+    color: #868686;
+    border: 1px solid #EDEDED;
+    border-radius: 2px;
+    border: 5px 10px;
+    font-size: 12px;
+  }
+#row-brand h2.heading{
+    border-top: 1px solid #EEF0EA;
+    padding-top: 25px;
+}
