@@ -198,12 +198,14 @@ body {
 .custom-carousel-indicators-primary:active {
     border-color: #b86d07 !important;
 }
+
 #carousel-featured .carousel-control-prev .fa-chevron-right,
-#carousel-featured .carousel-control-next .fa-chevron-left{
+#carousel-featured .carousel-control-next .fa-chevron-left {
     color: #868686;
     font-size: 38px;
 }
-#store-feature{
+
+#store-feature {
     background-image: url(../images/bg_features.png);
     background-repeat: no-repeat;
     background-size: auto 60%;
@@ -211,15 +213,100 @@ body {
     background-color: #fff;
     top: -30px;
     box-shadow: 0 0 15px #EEF0EA;
-    padding-top:35px ;
+    padding-top: 35px;
     padding-bottom: 25px;
     position: -10px -20px;
 
 }
-#store-feature .feature>img{
+
+#store-feature .feature>img {
     height: 40px;
     bottom: 10px;
 }
-#store-feature .feature+.feature{
+
+#store-feature .feature+.feature {
     border-right: 1px solid #EEF0EA;
 }
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.costum-thumbnail img {
+    height: 250px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.costum-thumbnail {
+    border: 2px solid #EEF0EA;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.costum-thumbnail:hover {
+    border-color: #2082ce;
+
+}
+
+.costum-thumbnail h4 {
+    font-size: 18px;
+}
+
+.price {
+    color: #53CCD7;
+}
+
+.rating {
+    color: #C2C2C2;
+}
+
+.rating .active {
+    color: #f3af41;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(83, 204, 215, 0.5);
+    height: 250px;
+    width: calc(100% - 16px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.add-to-card-btn {
+    color: #53CCD7;
+    background-color: #fff;
+    font-weight: 700;
+}
+.costum-thumbnail .sale{
+    padding: 5px 10px;
+    position: absolute;
+    top: 14px;
+    left: 16px;
+}
+.costum-thumbnail .sale::after{
+    content: '-';
+}
+.custom-carousel-indicators2 {
+    bottom: -20% !important;
+  }
+  
+  .custom-carousel-indicators2 li {
+    width: 13px !important;
+    height: 13px !important;
+    margin: 2px;
+    background-color: #dbdbdb !important;
+  }
+  
+  .custom-carousel-indicators2 li.active {
+    background-color: #565656 !important;
+  }
