@@ -9,3 +9,5 @@ document.querySelectorAll('.add-to-card-btn').forEach(item => {
         alert('اضيف هذا المنتج الي عربه الشراء');
     })
 });
+
+document.getElementById("copyright").innerHTML= "جميع الحقوق محفوظة" + new Date().getFullYear();
