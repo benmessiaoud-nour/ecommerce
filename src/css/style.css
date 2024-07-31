@@ -568,7 +568,7 @@ body {
 
 /* ----------checkout page----------------- */
 
-h1.custom-heading{
+h1.custom-heading {
     font-size: 36px;
     margin-bottom: 25px;
 }
@@ -588,38 +588,44 @@ h1.custom-heading{
     border-top: 1px solid #EBEBEB;
     border-bottom: 1px solid #EBEBEB;
 }
-.costum-table h4{
+
+.costum-table h4 {
     font-size: 18px;
     margin: 12px 0;
 }
-.custom-table th{
-   color: #C2C2C2;
+
+.custom-table th {
+    color: #C2C2C2;
     font-weight: normal;
 }
 
 
 .custom-table th:first-child,
-.custom-table td:first-child{
+.custom-table td:first-child {
     width: 50%;
 }
 
 .custom-table th:not(:first-child),
-.custom-table td:not(:first-child){
+.custom-table td:not(:first-child) {
     text-align: center;
 }
-.custom-table tfoot td{
+
+.custom-table tfoot td {
     border-bottom: none;
     font-size: 150%;
 }
-#total-price-for-all-products{
+
+#total-price-for-all-products {
     color: #000;
 }
-.custom-btn-outline-danger{
+
+.custom-btn-outline-danger {
     background-color: transparent;
     border-color: #ff3956;
     color: #ff3956;
 }
-.custom-btn-outline-danger:hover{
+
+.custom-btn-outline-danger:hover {
     border-color: #b9001b;
     color: #b9001b;
 
@@ -779,11 +785,19 @@ h1.custom-heading{
         max-width: 100%;
         padding: 0 20px;
     }
-    .hide-on-small{
+
+    .hide-on-small {
         display: none;
     }
 }
 
+.custom-input-info {
+    border-width: 2px;
+    border-radius: 3px;
+    height: 46px !important;
+    padding: 0 16px;
+    width: 98%;
+}
 
 @media (max-width: 576px) {
     .inline-form .custom-form-control {

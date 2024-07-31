@@ -57,6 +57,59 @@ function totalPriceForAllProducts() {
         totalPriceForAllProducts=  totalPriceForAllProducts +totalPriceForProduct;
     })
     document.getElementById('total-price-for-all-products').innerHTML= totalPriceForAllProducts + "$";
-}
+};
+
+const citiesByCountries = {
+    alg: [  'ميلة','العاصمة'],
+    eg: ['القاهرة','الاسكندرية'],
+    sa: ['الرياض','جدة'],
+
+
+    }
+    document.querySelectorAll('select[name="country"]').forEach(item => {
+        item.addEventListener('change',() => {
+            const country = item.value
+            const cities = citiesByCountries[country]
+    
+            document.querySelectorAll('#paymentcities option').forEach(option => option.remove())
+    
+            const firstOption = document.createElement('option')
+            const optionText = document.createTextNode('اختر مدينة')
+            firstOption.appendChild(optionText)
+            firstOption.getAttribute('value','')
+            firstOption.getAttribute('disabled','true')
+            firstOption.getAttribute('selected','true')
+            const city_options = document.getElementById('paymentcities')
+            city_options.appendChild(firstOption)
+    
+            cities.forEach(city => {
+                const newOption = document.createElement('option')
+                const optionText = document.createTextNode(city)
+                newOption.appendChild(optionText)
+                newOption.setAttribute('value',city)
+                city_options.appendChild(newOption)
+            })
+        })
+    });
+
+    
+document.querySelectorAll('#form-checkout input[name="payment-method"]').forEach(i => {
+    i.addEventListener('change', () => {
+      const paymentMethod = i.value;
+      const creditCardInputs = document.querySelectorAll('#credit-card-info input');
+  
+      if (paymentMethod === 'on-delivery') {
+        creditCardInputs.forEach(input => {
+          input.style.display = 'none'
+        })
+      } else if (paymentMethod === 'credit-card')
+      {
+        creditCardInputs.forEach(input => {
+          input.style.display = 'block'
+        });
+      }
+    })
+  })
+
 
 document.getElementById("copyright").innerHTML= "جميع الحقوق محفوظة" + new Date().getFullYear();
