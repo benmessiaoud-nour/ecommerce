@@ -234,7 +234,7 @@ body {
 }
 
 .costum-thumbnail img {
-     max-height: 250px;
+    max-height: 250px;
     width: 100%;
     max-width: 250px;
 }
@@ -675,7 +675,8 @@ h1.custom-heading {
     outline: none !important;
     transition: all .3s ease;
 }
-.custom-pagination .page-item.active .page-link{
+
+.custom-pagination .page-item.active .page-link {
     background-color: #f8ad47 !important;
     color: #fff !important;
     border-color: #f8ad47 !important;
@@ -683,7 +684,7 @@ h1.custom-heading {
 
 .custom-pagination .page-link:active,
 .custom-pagination .page-link:focus,
-.custom-pagination .page-link:hover{
+.custom-pagination .page-link:hover {
     color: #f8ad47 !important;
     background-color: #fff !important;
     border: #f8ad47 !important;
@@ -691,12 +692,40 @@ h1.custom-heading {
 
 
 
+/* -------contact page--------- */
+
+#contact-options ul {
+    list-style: none;
+}
 
 
+#contact-options .contact-info li {
+    margin-bottom: 15px;
+}
+
+#contact-options .contact-info li span .list-icon {
+    color: #f8ad47;
+    margin-left: 5px;
+}
+
+#contact-options .contact-info li span{
+    font-size: 15px;
+}
+
+#contact-options .custom-input-form{
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+}
 
 
-
-
+#contact-options .custom-input-form:focus{
+    border-color: rgb(146, 7, 7);
+}
+#contact-options textarea{
+  max-width: 96%;
+  margin-right: 10px;
+}
 
 
 
@@ -806,11 +835,20 @@ h1.custom-heading {
         margin: 10px;
         font-size: 20px;
     }
-    .search-pagination{
+
+    .search-pagination {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    
+#contact-options input{
+    margin-bottom: 15px;
+
+}
+#contact-options .custom-btn-warning {
+    margin-bottom: 20px !important;
+}
 }
 
 @media (max-width: 768px) {
